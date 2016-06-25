@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chrhc.mybatis.autodate.mapper.UserMapper">
+	
+	<resultMap id="BaseResultMap" type="User">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="password" property="password"/>
+		<result column="user_type" property="userType" typeHandler="com.chrhc.mybatis.handler.EnumHandler"/>
+	</resultMap>
+	
+	<insert id="insertUser" parameterType="User">
+		insert into user_enum(id, name, password, user_type)values(#{id}, #{name}, #{password}, #{userType,typeHandler=com.chrhc.mybatis.handler.EnumHandler})
+	</insert>
+	
+	<select id="selectById" resultMap="BaseResultMap">
+		select * from user_enum where id = #{id}
+	</select>
+	
+	<select id="selectByUserType" resultMap="BaseResultMap">
+		select * from user_enum where user_type=#{userType,typeHandler=com.chrhc.mybatis.handler.EnumHandler}
+	</select>
+	
+</mapper>
