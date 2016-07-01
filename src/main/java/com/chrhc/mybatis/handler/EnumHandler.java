@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.EnumSet;
 
+import org.apache.ibatis.type.Alias;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 
@@ -17,6 +18,7 @@ import org.apache.ibatis.type.JdbcType;
  *
  *         2016年6月25日 上午11:59:11
  */
+@Alias("EnumHandler")
 public class EnumHandler<E extends Enum<E> & Identifiable<K>, K> extends BaseTypeHandler<E> {
 
 	private Class<E> type;
