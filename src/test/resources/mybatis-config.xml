@@ -4,11 +4,16 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-	<typeAliases>
-		<typeAlias alias="User" type="com.chrhc.mybatis.handler.domain.User" />
-		<typeAlias alias="EnumHandler" type="com.chrhc.mybatis.handler.EnumHandler" />
-	</typeAliases>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/><!-- 使用驼峰命名法转换字段。 -->
+	</settings>
 	
+	<typeAliases>
+		<typeAlias alias="EnumHandler" type="com.chrhc.mybatis.handler.EnumHandler" />
+		<typeAlias alias="Person" type="com.chrhc.mybatis.handler.domain.Person" />
+		<typeAlias alias="Address" type="com.chrhc.mybatis.handler.domain.Address" />
+	</typeAliases>
+
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
@@ -22,7 +27,7 @@
 	</environments>
 
 	<mappers>
-		<mapper resource="mapper/UserMapper.xml" />
+		<mapper resource="mapper/PersonMapper.xml" />
 	</mappers>
 	
 </configuration>
