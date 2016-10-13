@@ -1,4 +1,4 @@
-package com.chrhc.mybatis.handler.mapper.test;
+package com.github.xjs.mybatis.handler.mapper.test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,15 +18,15 @@ import org.apache.ibatis.type.TypeHandlerRegistry;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.chrhc.mybatis.handler.EnumHandler;
-import com.chrhc.mybatis.handler.Identifiable;
-import com.chrhc.mybatis.handler.domain.Person;
-import com.chrhc.mybatis.handler.mapper.PersonMapper;
+import com.github.xjs.mybatis.handler.EnumHandler;
+import com.github.xjs.mybatis.handler.Identifiable;
+import com.github.xjs.mybatis.handler.domain.Person;
+import com.github.xjs.mybatis.handler.mapper.PersonMapper;
 
 public class PersonMapperTest {
 
 	private static SqlSession sqlSession = null;
-	private static String basePackage = "com.chrhc.mybatis.handler.domain";
+	private static String basePackage = "com.github.xjs.mybatis.handler.domain";
 
 	@BeforeClass
 	public static void doInitTest() throws Exception {

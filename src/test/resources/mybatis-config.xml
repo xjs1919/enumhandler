@@ -9,9 +9,9 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias alias="EnumHandler" type="com.chrhc.mybatis.handler.EnumHandler" />
-		<typeAlias alias="Person" type="com.chrhc.mybatis.handler.domain.Person" />
-		<typeAlias alias="Address" type="com.chrhc.mybatis.handler.domain.Address" />
+		<typeAlias alias="EnumHandler" type="com.github.xjs.mybatis.handler.EnumHandler" />
+		<typeAlias alias="Person" type="com.github.xjs.mybatis.handler.domain.Person" />
+		<typeAlias alias="Address" type="com.github.xjs.mybatis.handler.domain.Address" />
 	</typeAliases>
 
 	<environments default="development">

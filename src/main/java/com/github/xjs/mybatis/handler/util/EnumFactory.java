@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.chrhc.mybatis.handler.util;
+package com.github.xjs.mybatis.handler.util;
 
 import java.util.EnumSet;
 
-import com.chrhc.mybatis.handler.Identifiable;
+import com.github.xjs.mybatis.handler.Identifiable;
 
 /**
  * @author 605162215@qq.com

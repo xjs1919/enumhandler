@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.chrhc.mybatis.handler;
+package com.github.xjs.mybatis.handler;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;

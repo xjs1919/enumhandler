@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.chrhc.mybatis.handler.domain;
+package com.github.xjs.mybatis.handler.domain;
 
 /**
  * @author 605162215@qq.com

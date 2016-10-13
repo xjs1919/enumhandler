@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.chrhc.mybatis.handler.domain;
+package com.github.xjs.mybatis.handler.domain;
 
-import com.chrhc.mybatis.handler.Identifiable;
+import com.github.xjs.mybatis.handler.Identifiable;
 
 /**
  * @author 605162215@qq.com

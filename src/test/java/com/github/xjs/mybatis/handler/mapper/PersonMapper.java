@@ -1,8 +1,8 @@
-package com.chrhc.mybatis.handler.mapper;
+package com.github.xjs.mybatis.handler.mapper;
 
 import java.util.List;
 
-import com.chrhc.mybatis.handler.domain.Person;
+import com.github.xjs.mybatis.handler.domain.Person;
 
 public interface PersonMapper {
 	
